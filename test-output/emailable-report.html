@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">4.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.galenframework.java.sample.tests.ZooplaHomePageTest<td><a href="#m1"><b>Zoopla_Landing_Page_Search</b>  </a></td><td class="numi">1</td><td>1590774984227</td><td class="numi">15</td></tr>
+</table>
+<h1>Default test</h1>
+<a id="m1"></a><h2>com.galenframework.java.sample.tests.ZooplaHomePageTest:Zoopla_Landing_Page_Search</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">desktop 1680x900</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Returned value cannot be converted to WebElement: {stacktrace=0   chromedriver                        0x00000001012da269 chromedriver + 4674153
+1   chromedriver                        0x0000000101274593 chromedriver + 4257171
+2   chromedriver                        0x0000000100f1de22 chromedriver + 757282
+3   chromedriver                        0x0000000100e7fa6c chromedriver + 109164
+4   chromedriver                        0x0000000100ea62cc chromedriver + 266956
+5   chromedriver                        0x0000000100ea46d4 chromedriver + 259796
+6   chromedriver                        0x0000000100ea3f57 chromedriver + 257879
+7   chromedriver                        0x0000000100e6a549 chromedriver + 21833
+8   chromedriver                        0x000000010129bfff chromedriver + 4419583
+9   chromedriver                        0x00000001012a97ba chromedriver + 4474810
+10  chromedriver                        0x00000001012a9557 chromedriver + 4474199
+11  chromedriver                        0x0000000101280149 chromedriver + 4305225
+12  chromedriver                        0x00000001012aa067 chromedriver + 4477031
+13  chromedriver                        0x0000000101291d87 chromedriver + 4377991
+14  chromedriver                        0x0000000100e67ffb chromedriver + 12283
+15  libdyld.dylib                       0x00007fff67b3a3d5 start + 1
+16  ???                                 0x0000000000000002 0x0 + 2
+, error=invalid session id, message=invalid session id}
+Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
+System info: host: &apos;INLaptop140.local&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+<br/>at com.galenframework.java.sample.tests.ZooplaHomePageTest.Zoopla_Landing_Page_Search(ZooplaHomePageTest.java:97)
+<br/>25 lines not shown
+<p>Caused by com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to org.openqa.selenium.WebElement</p>
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+<br/>at com.galenframework.java.sample.tests.ZooplaHomePageTest.Zoopla_Landing_Page_Search(ZooplaHomePageTest.java:97)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
